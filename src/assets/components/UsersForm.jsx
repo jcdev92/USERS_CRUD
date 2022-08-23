@@ -54,7 +54,10 @@ const UsersForm = ({getAllUsers, setUpdateUsers, updateUsers, handleModalOff}) =
 
   return (
     <form className="form" onSubmit={handleSubmit(submit)}>
-      <h1 className="form-title">{updateUsers ? 'Update User' : 'New User'}</h1>
+      <div className="form__group">
+        <h1 className="form__title">{updateUsers ? 'Update User' : 'New User'}</h1>
+        <button className="form__btn__close" onClick={handleModalOff}>X</button>
+      </div>
       <div className="form__group">
         <label htmlFor="first_name" className="form__label"><MdDriveFileRenameOutline/> </label>
         <input {...register("first_name")} type="text" className="form__input" id="first_name" placeholder="First Name"/>

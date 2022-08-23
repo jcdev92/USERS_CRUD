@@ -30,7 +30,7 @@ function App() {
     <div className="App">
       <div className="container">
         <div className="navbar">
-        <h1 className="title">Users Manager</h1>
+          <h1 className="title">Users Manager</h1>
           <button onClick={handleModalOn} className="add__btn"><h4 className='add__btn__title'>Add New User</h4> <AiFillPlusCircle className='add__btn__icon'/> </button>
         </div>
         <div className={modalState ? 'form__container__on' : 'form__container__off'}>
