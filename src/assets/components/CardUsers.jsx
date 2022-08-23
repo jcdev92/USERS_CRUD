@@ -1,5 +1,6 @@
 import React from 'react'
 import axios from 'axios'
+import {MdDelete, MdModeEditOutline} from 'react-icons/md'
 
 const CardUsers = ({user, getAllUsers, setUpdateUsers, handleModalOn}) => {
 
@@ -19,8 +20,8 @@ const CardUsers = ({user, getAllUsers, setUpdateUsers, handleModalOn}) => {
             <li className="card__item"><span className="card__span">Birthday: </span><a className="card__a">{user.birthday}</a></li>
           </ul>
           <footer className="card__footer">
-            <button className="card__btn" onClick={deleteCardUsers}>Delete</button>
-            <button className="card__btn" onClick={() => {setUpdateUsers(user); handleModalOn()}}>Update</button>
+            <button className="card__btn" onClick={deleteCardUsers}><MdDelete className='card__btn__icon'/></button>
+            <button className="card__btn" onClick={() => {setUpdateUsers(user); handleModalOn()}}><MdModeEditOutline className='card__btn__icon'/></button>
           </footer>
       </div>
     </article>

@@ -78,7 +78,7 @@ const UsersForm = ({getAllUsers, setUpdateUsers, updateUsers, handleModalOff}) =
         <label htmlFor="birthday" className="form__label"> <FaBirthdayCake/> </label>
         <input {...register("birthday")} type="date" className="form__input" id="birthday" placeholder="birthday"/>
       </div>
-      <button className="form__btn" onClick={() => handleModalOff()}>{updateUsers ? <MdChangeCircle className="form__btn__add"/>: <AiFillPlusCircle className="form__btn__add"/> }</button>
+      <button className={updateUsers? "form__btn" : "form__btn form__btn__upt"} onClick={() => handleModalOff()}>{updateUsers ? <MdChangeCircle className="form__btn__add"/>: <AiFillPlusCircle className="form__btn__add"/> }</button>
     </form>
   );
 };

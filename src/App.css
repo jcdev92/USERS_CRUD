@@ -93,29 +93,44 @@
     color: #aaac;
     padding-left: 10px;
   }
+
   .card__span {
     color: black;
     transform: translateX(-10px);
   }
+
   .card__footer {
     display: flex;
-    gap: 20px;
+    justify-content: end;
+    gap: 10px;
+    border-top: 0.5px solid #E5E5E5;
+    padding: 1em;
   }
   .card__btn {
     border: none;
     padding: 8px 12px;
-    border-radius: 5px;
+    border-radius: 2px;
+    width: 43px;
+    height: 43px;
     cursor: pointer;
+    transition: transform 0.3s ease-in-out;
   }
   .card__btn:nth-child(1) {
-    background-color: brown;
+    background-color: #D93F3F;
     color: white;
   }
   .card__btn:nth-child(2) {
-    background-color: goldenrod;
+    background-color: #BDBDBD;
     color: white;
   }
 
+  .card__btn:hover {
+    transform: scale(1.1);
+  }
+
+  .card__btn__icon {
+    font-size: 1.5em;
+  }
 
 
   .form__container__on {
@@ -187,7 +202,11 @@
     .form__btn:hover {
       background-color: #555A88;
       color: #fff;
-      transform: scale(1.1);
+      transform: scale(1.1) rotate(360deg);
+    }
+
+    .form__btn__upt:hover {
+      transform: rotate(360deg);
     }
 
     .form__btn__close {
