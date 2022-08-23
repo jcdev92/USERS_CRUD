@@ -207,7 +207,7 @@
     .form__btn:hover {
       background-color: #555A88;
       color: #fff;
-      transform: scale(1.1) rotate(360deg);
+      transform: scale(1.1);
     }
 
     .form__btn__upt:hover {
